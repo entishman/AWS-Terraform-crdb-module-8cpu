@@ -9,7 +9,8 @@ vpc_cidr = "192.168.7.0/24"
 # CRDB Specifications
 # -----------------------------------------
 crdb_nodes = 3
-crdb_instance_type = "t4g.medium"
+#crdb_instance_type = "t4g.medium"
+crdb_instance_type = "t2.2xlarge"
 crdb_store_volume_type = "gp3"
 crdb_store_volume_size = 8
 crdb_version = "24.2.4"
@@ -22,7 +23,8 @@ haproxy_instance_type = "t3a.micro"
 
 # APP Node
 include_app = "yes"
-app_instance_type = "t3a.micro"
+#app_instance_type = "t3a.micro"
+app_instance_type = "t4g.medium"
 
 create_admin_user = "yes"
 admin_user_name = "ron"
